@@ -17,7 +17,7 @@ class OrderServiceV3Test {
 	private static final int THREAD_SIZE = 10;
 	
 	@Test
-	void testCase1() {
+	void testCase1() throws InterruptedException {
 		ExecutorService executorService = Executors.newFixedThreadPool(THREAD_SIZE);
 		CountDownLatch latch = new CountDownLatch(THREAD_SIZE);
 		
@@ -27,6 +27,7 @@ class OrderServiceV3Test {
 				orderServiceV3.orderItem("hello");
 				latch.countDown();
 			});
+			Thread.sleep(2000);
 		}
 	}
 }
