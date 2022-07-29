@@ -2,7 +2,7 @@ package com.example.logtrace.v2;
 
 import com.example.logtrace.trace.TraceId;
 import com.example.logtrace.trace.TraceStatus;
-import com.example.logtrace.trace.v1.HelloTraceV2;
+import com.example.logtrace.trace.v2.HelloTraceV2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

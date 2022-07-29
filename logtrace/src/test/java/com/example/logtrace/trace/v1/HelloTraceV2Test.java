@@ -1,6 +1,7 @@
 package com.example.logtrace.trace.v1;
 
 import com.example.logtrace.trace.TraceStatus;
+import com.example.logtrace.trace.v2.HelloTraceV2;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

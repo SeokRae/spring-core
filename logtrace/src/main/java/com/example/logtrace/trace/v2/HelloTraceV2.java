@@ -1,4 +1,4 @@
-package com.example.logtrace.trace.v1;
+package com.example.logtrace.trace.v2;
 
 import com.example.logtrace.trace.TraceId;
 import com.example.logtrace.trace.TraceStatus;
