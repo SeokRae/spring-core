@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class FieldServiceTest {
 	
-	private FieldService fieldService = new FieldService();
+	private final FieldService fieldService = new FieldService();
 	
 	@Test
 	void field() {
