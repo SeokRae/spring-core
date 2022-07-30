@@ -1,5 +1,6 @@
-package com.example.logtrace.v3;
+package com.example.logtrace.v4;
 
+import com.example.logtrace.v3.OrderControllerV3;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +11,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @SpringBootTest
-class OrderControllerThreadV3Test {
+class OrderControllerV4ThreadTest {
 	
 	@Autowired
-	private OrderControllerV3 orderControllerV3;
+	private OrderControllerV4 orderControllerV4;
 	
 	private static final int THREAD_SIZE = 10;
 	
@@ -26,7 +27,7 @@ class OrderControllerThreadV3Test {
 		for (int i = 0; i < THREAD_SIZE; i++) {
 			// 멀티 스레드 요청을 하는 코드
 			executorService.execute(() -> {
-				orderControllerV3.request("hello");
+				orderControllerV4.request("hello");
 				latch.countDown();
 				
 			});
